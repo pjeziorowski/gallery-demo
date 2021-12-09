@@ -5,6 +5,8 @@ const cors = require('cors');
 
 require('dotenv').config();
 
+console.log('Starting')
+
 const middlewares = require('./middlewares');
 const api = require('./api');
 
