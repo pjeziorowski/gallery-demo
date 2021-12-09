@@ -5,7 +5,7 @@ import {
   QueryClientProvider, useQuery
 } from "react-query";
 
-const apiRoot = process.env.API_ROOT || 'http://localhost:8080';
+const apiRoot = process.env.API_ROOT || 'https://z7cddb8b3-za1c0d31b-gtw.qovery.io';
 
 const queryClient = new QueryClient();
 
