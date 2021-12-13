@@ -13,7 +13,8 @@ const imageSchema = new mongoose.Schema({
 
 console.log('Connecting' + databaseUrl)
 
-// mongoose.connect(databaseUrl);
+mongoose.connect(databaseUrl);
+
 router.get('/', (req, res) => {
   res.json([
     {
