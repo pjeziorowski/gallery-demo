@@ -1,15 +1,10 @@
 const express = require('express');
 const mongoose = require('mongoose');
+const imageSchema = require('./schema');
 
 const router = express.Router();
 const databaseUrl = process.env.DATABASE_URL
     || 'mongodb://localhost:27017/test';
-
-const imageSchema = new mongoose.Schema({
-  title: String,
-  size: String,
-  source: String
-});
 
 console.log('Connecting' + databaseUrl)
 
